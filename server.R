@@ -1,13 +1,18 @@
 # Define server for application
 
-server <- function(input, output) {
+server <- function(input, output) { # opening bracket
 
-  output$message <- renderText({
+  output$greeting <- renderText({
 
-    msg <- paste("Hi there", input$name)
+    msg <- paste("Hi there", input$user_name)
     return(msg)
 
   })
 
-  # Add another output message
-}
+  # Add another output message based on user choice
+  
+  #output$response <- if (input$user_choice == 1) {
+    
+    
+# closing bracket
+    }
