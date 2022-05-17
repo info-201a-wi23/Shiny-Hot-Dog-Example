@@ -10,9 +10,11 @@ server <- function(input, output) { # opening bracket
   })
 
   # Add another output message based on user choice
-  
-  #output$response <- if (input$user_choice == 1) {
-    
-    
+
+  #output$response <- renderText({
+
+#  if (input$user_choice == 1) {
+
+
 # closing bracket
     }
