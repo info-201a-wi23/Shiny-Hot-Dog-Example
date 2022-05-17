@@ -2,10 +2,10 @@
 
 # What shows up on the web page
 ui <- fluidPage(
-  
+
   # Static content
   h1("My INFO 201 App", align="center"),
-  
+
   # Dynamic input -- text input box
   textInput(inputId = "user_name",
 #          inputID is important!!
@@ -22,9 +22,11 @@ ui <- fluidPage(
     # Title for radio button
     label = h3("Is a hot dog a sandwich?"),
     # Change the choices
-    choices = list("Choice 1" = 1, 
-                   "Choice 2" = 2), 
+    choices = list("Choice 1" = 1,
+                   "Choice 2" = 2),
     # Default selection
     selected = 1),
+
+    textOutput(outputId = "response"),
 
 )

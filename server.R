@@ -10,9 +10,14 @@ server <- function(input, output) { # opening bracket
   })
 
   # Add another output message based on user choice
-  
-  #output$response <- if (input$user_choice == 1) {
-    
-    
-# closing bracket
+
+  output$response <- renderText({
+
+    if (input$user_choice == 1) {
+    return("Yes, you are absolutely correct. Fine choice.")
+    }
+    else {
+      return("Wrong answer")
+    }
+})
     }
