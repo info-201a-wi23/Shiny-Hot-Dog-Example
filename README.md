@@ -1,3 +1,3 @@
-# Week7 PartII
+# Shiny Example
 
-Here are the Week 7 Part II exercises.
+Here's the example web page: 
