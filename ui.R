@@ -8,13 +8,13 @@ ui <- fluidPage(
   
   # Dynamic input -- text input box
   textInput(inputId = "user_name",
-#          inputID is important!!
+            #          inputID is important!!
             label="What's your name?"),
-
+  
   # Dynamic output -- a message from the server.R
   #          outputID is important!!
   textOutput(outputId = "greeting"),
-
+  
   # Make a radio button widget
   radioButtons(
     #inputID is important!!
@@ -22,9 +22,11 @@ ui <- fluidPage(
     # Title for radio button
     label = h3("Is a hot dog a sandwich?"),
     # Change the choices
-    choices = list("Choice 1" = 1, 
-                   "Choice 2" = 2), 
+    choices = list("Yes" = 1,
+                   "No" = 2),
     # Default selection
     selected = 1),
-
+  
+  textOutput(outputId = "response"),
+  
 )
